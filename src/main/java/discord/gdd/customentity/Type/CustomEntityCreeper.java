@@ -2,7 +2,9 @@ package discord.gdd.customentity.Type;
 
 import java.lang.reflect.Field;
 
+import discord.gdd.Main;
 import discord.gdd.customentity.MobBase;
+import discord.gdd.customentity.MobUtils;
 import org.bukkit.Location;
 import org.bukkit.craftbukkit.v1_8_R3.util.UnsafeList;
 
@@ -17,5 +19,9 @@ public class CustomEntityCreeper extends EntityCreeper implements MobBase{
 		super(world);
 	}
 
+	public CustomEntityCreeper(World world, MobUtils.TipoDeInteligencia tipo){
+		super(world);
+		Main.getMobUtils().setarPathfinder(this,goalSelector,targetSelector,tipo);
+	}
 
 }

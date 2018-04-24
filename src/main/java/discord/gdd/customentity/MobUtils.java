@@ -2,6 +2,8 @@ package discord.gdd.customentity;
 
 import discord.gdd.Utils.Reflection;
 import discord.gdd.customentity.Type.*;
+import net.minecraft.server.v1_8_R3.*;
+import org.bukkit.craftbukkit.v1_8_R3.util.UnsafeList;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -9,17 +11,19 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+/*
+Criado por Wiljafor1
+ */
+
 public class MobUtils {
+    /*
+    Reflection da classes das entidades do minecfraft server
+    */
 
     Class EntityTypes = Reflection.getMinecraftClass("EntityTypes");
     Class EntityInsentient = Reflection.getMinecraftClass("EntityInsentient");
     Class EntityIronGolem = Reflection.getMinecraftClass("EntityIronGolem");
     Class EntityCreeper = Reflection.getMinecraftClass("EntityCreeper");
-
-
-    /*
-    Reflection da classes das entidades do minecfraft server
-     */
     Class EntitySkeleton = Reflection.getMinecraftClass("EntitySkeleton");
     Class EntitySpider = Reflection.getMinecraftClass("EntitySpider");
     Class EntityGiantZombie = Reflection.getMinecraftClass("EntityGiantZombie");
@@ -74,6 +78,10 @@ public class MobUtils {
         }
     }
 
+    public enum TipoDeInteligencia{
+        Assustado,Burro;
+    }
+
     /*
     Aqui registra todos os custom entity.
      */
@@ -107,7 +115,44 @@ public class MobUtils {
     }
 
     /*
-        Pathfinder --
+        Pathfinder -- 1.8.X -- (OBS: Ta uma putaria isso tava fazendo toda em reflection kk, quem tiver com vontade faz o resto aew, by Wiljafor1)
     */
+
+
+    public void setarPathfinder(EntityCreature entity, PathfinderGoalSelector goalSelector, PathfinderGoalSelector targetSelector, TipoDeInteligencia tipo){
+        if(tipo.equals(TipoDeInteligencia.Assustado)){
+            try {
+                Field bField = PathfinderGoalSelector.class.getDeclaredField("b");
+                bField.setAccessible(true);
+                Field cField = PathfinderGoalSelector.class.getDeclaredField("c");
+                cField.setAccessible(true);
+                bField.set(goalSelector, new UnsafeList<PathfinderGoalSelector>());
+                bField.set(targetSelector, new UnsafeList<PathfinderGoalSelector>());
+                cField.set(goalSelector, new UnsafeList<PathfinderGoalSelector>());
+                cField.set(targetSelector, new UnsafeList<PathfinderGoalSelector>());
+            }
+            catch (Exception exc) {
+                exc.printStackTrace();
+            }
+            goalSelector.a(0, new PathfinderGoalFloat(entity));
+            goalSelector.a(1, new PathfinderGoalAvoidTarget(entity, EntityHuman.class, 8.0F, 1.6D, 1.6D));
+        }
+        else if(tipo.equals(TipoDeInteligencia.Burro)){
+            try {
+                Field bField = PathfinderGoalSelector.class.getDeclaredField("b");
+                bField.setAccessible(true);
+                Field cField = PathfinderGoalSelector.class.getDeclaredField("c");
+                cField.setAccessible(true);
+                bField.set(goalSelector, new UnsafeList<PathfinderGoalSelector>());
+                bField.set(targetSelector, new UnsafeList<PathfinderGoalSelector>());
+                cField.set(goalSelector, new UnsafeList<PathfinderGoalSelector>());
+                cField.set(targetSelector, new UnsafeList<PathfinderGoalSelector>());
+            }
+            catch (Exception exc) {
+                exc.printStackTrace();
+            }
+            //Sem ideia para colocar aqui ¯\_(ツ)_/¯
+        }
+    }
 
 }
