@@ -2,33 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08a6bc45-a39e-4e52-b30c-b53d5495a156" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/MobUtils.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/MobUtils.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityBlaze.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityBlaze.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityCaveSpider.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityCaveSpider.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityChicken.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityChicken.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityCow.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityCow.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityCreeper.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityCreeper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityEnderman.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityEnderman.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityEndermite.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityEndermite.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityGiant.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityGiant.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityGuardian.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityGuardian.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityHorse.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityHorse.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityIronGolem.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityIronGolem.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityMushroomCow.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityMushroomCow.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityOcelot.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityOcelot.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityPig.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityPig.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityPigZombie.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityPigZombie.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityRabbit.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityRabbit.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntitySheep.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntitySheep.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntitySilverFish.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntitySilverFish.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntitySkeleton.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntitySkeleton.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntitySnowGolem.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntitySnowGolem.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntitySpider.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntitySpider.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityVillager.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityVillager.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityWitch.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityWitch.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityWither.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityWither.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityWolf.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityWolf.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityZombie.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityZombie.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_21_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bukkit_bukkit_1_12_2_R0_1_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/GDD-API.iml" afterPath="$PROJECT_DIR$/GDD-API.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Main.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/Main.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,41 +27,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CustomEntityEnderman.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityEnderman.java">
+      <file leaf-file-name="CustomEntityCaveSpider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityCaveSpider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="221">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomEntityCreeper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityCreeper.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="425">
+              <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+              <folding>
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1033#1034#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomEntityCow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityCow.java">
+      <file leaf-file-name="Vault.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/Vault.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomEntityChicken.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityChicken.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="782">
+              <caret line="52" column="5" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,11 +62,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomEntityCaveSpider.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityCaveSpider.java">
+      <file leaf-file-name="Vault.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/Utils/Vault.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="183">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#946#947#0" expanded="true" />
+                <element signature="e#1002#1003#0" expanded="true" />
+                <element signature="e#1061#1062#0" expanded="true" />
+                <element signature="e#1116#1117#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -97,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityBlaze.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -140,7 +135,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/customentity/MobUtils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-476">
-              <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+              <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
               <folding>
                 <element signature="e#2477#2478#0" expanded="true" />
                 <element signature="e#2514#2515#0" expanded="true" />
@@ -183,9 +178,7 @@
         <option value="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/RunnableAPI.java" />
         <option value="$PROJECT_DIR$/src/main/java/discord/gdd/pentest/NetworkWatcher.java" />
         <option value="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/MobBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/discord/gdd/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/Reflection.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityZombie.java" />
         <option value="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityWolf.java" />
         <option value="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityWither.java" />
@@ -213,6 +206,10 @@
         <option value="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityCaveSpider.java" />
         <option value="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityBlaze.java" />
         <option value="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/MobUtils.java" />
+        <option value="$USER_HOME$/Downloads/Vault.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/Vault.java" />
+        <option value="$PROJECT_DIR$/src/main/java/discord/gdd/Main.java" />
       </list>
     </option>
   </component>
@@ -239,6 +236,11 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="GDD-API" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="GDD-API" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
       <select />
@@ -310,34 +312,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gdd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GDDAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GDD" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gdd" type="462c0819:PsiDirectoryNode" />
-              <item name="customentity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GDDAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GDD" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gdd" type="462c0819:PsiDirectoryNode" />
-              <item name="customentity" type="462c0819:PsiDirectoryNode" />
-              <item name="Type" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GDDAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GDD" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gdd" type="462c0819:PsiDirectoryNode" />
-              <item name="pentest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GDDAPI" type="b2602c69:ProjectViewProjectNode" />
@@ -585,22 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#946#947#0" expanded="false" />
-            <element signature="e#969#970#0" expanded="false" />
-            <element signature="e#1274#1275#0" expanded="false" />
-            <element signature="e#1308#1309#0" expanded="false" />
-            <element signature="e#1390#1391#0" expanded="false" />
-            <element signature="e#1426#1427#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/Utils/Reflection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -638,17 +596,6 @@
         <state relative-caret-position="-154">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="101" column="26" lean-forward="false" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
-          <folding>
-            <element signature="n#repositories#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -713,8 +660,8 @@
         <state relative-caret-position="170">
           <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
           <folding>
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="false" />
+            <element signature="e#620#621#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -740,7 +687,7 @@
         <state relative-caret-position="238">
           <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -750,7 +697,7 @@
         <state relative-caret-position="238">
           <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -760,7 +707,7 @@
         <state relative-caret-position="204">
           <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -770,7 +717,7 @@
         <state relative-caret-position="221">
           <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="18" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -804,7 +751,7 @@
         <state relative-caret-position="238">
           <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -846,7 +793,7 @@
         <state relative-caret-position="323">
           <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -854,7 +801,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityBlaze.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -862,7 +809,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/customentity/MobUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-476">
-          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
           <folding>
             <element signature="e#2477#2478#0" expanded="true" />
             <element signature="e#2514#2515#0" expanded="true" />
@@ -899,9 +846,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/customentity/Type/CustomEntityCaveSpider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="221">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Vault.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="52" column="5" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/Utils/Vault.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+          <folding>
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
