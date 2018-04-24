@@ -35,6 +35,7 @@ public class Main extends JavaPlugin{
         watcher = new NetworkWatcher();
         mobUtils = new MobUtils();
         vault = new Vault();
+        vault.
         mobUtils.registrarTodos();
     }
 

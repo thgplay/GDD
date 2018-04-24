@@ -10,6 +10,10 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 
 public class Vault {
 
+    public Vault(){
+        setupEconomy();
+    }
+
     public Economy economy = null;
 
     private boolean setupEconomy() {
