@@ -20,6 +20,10 @@ import org.bukkit.plugin.java.annotation.plugin.author.Author;
 @Author(name = "MrD4rkBr")
 @LogPrefix(prefix = "GDD")
 
+/*
+GDD API
+*/
+
 public class Main extends JavaPlugin{
     @Getter static Main instance;
     @Getter static RunnableAPI runnable;
