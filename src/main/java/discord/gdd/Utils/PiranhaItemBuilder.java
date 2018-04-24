@@ -18,7 +18,7 @@ import java.util.List;
 Criado pelo Frach - R.I.P. Avicii#6234 - Membro da GDD
 */
 
-public class ItemStackBuilder {
+public class PiranhaItemBuilder {
     private ItemStack item;
     private ItemMeta meta;
     private EnchantmentStorageMeta storage;
@@ -27,7 +27,7 @@ public class ItemStackBuilder {
     private net.minecraft.server.v1_8_R3.ItemStack item2;
     private SkullMeta skullMeta;
 
-    public ItemStackBuilder(final ItemStack item) {
+    public PiranhaItemBuilder(final ItemStack item) {
         this.glow = false;
         this.item = item;
         if (item.getType() == Material.ENCHANTED_BOOK) {
@@ -42,16 +42,16 @@ public class ItemStackBuilder {
         }
     }
 
-    public ItemStackBuilder(final Material material) {
+    public PiranhaItemBuilder(final Material material) {
         this(new ItemStack(material));
     }
 
-    public ItemStackBuilder setType(final Material type) {
+    public PiranhaItemBuilder setType(final Material type) {
         this.item.setType(type);
         return this;
     }
 
-    public ItemStackBuilder setOwner(final String owner) {
+    public PiranhaItemBuilder setOwner(final String owner) {
         if (this.item.getType() == Material.SKULL_ITEM || this.item.getType() == Material.SKULL) {
             this.skullMeta.setOwner(owner);
             return this;
@@ -59,7 +59,7 @@ public class ItemStackBuilder {
         return this;
     }
 
-    public ItemStackBuilder setName(final String name) {
+    public PiranhaItemBuilder setName(final String name) {
         if (this.item.getType() == Material.ENCHANTED_BOOK) {
             this.storage.setDisplayName(name);
             return this;
@@ -72,48 +72,48 @@ public class ItemStackBuilder {
         return this;
     }
 
-    public ItemStackBuilder addLore(final String... l) {
+    public PiranhaItemBuilder addLore(final String... l) {
         for (final String x : l) {
             this.lore.add(x);
         }
         return this;
     }
 
-    public ItemStackBuilder addLore(final List<String> l) {
+    public PiranhaItemBuilder addLore(final List<String> l) {
         for (final String x : l) {
             this.lore.add(x);
         }
         return this;
     }
 
-    public ItemStackBuilder addLoreList(final List<String> l) {
+    public PiranhaItemBuilder addLoreList(final List<String> l) {
         for (final String s : l) {
             this.lore.add(s.replace("&", "�"));
         }
         return this;
     }
 
-    public ItemStackBuilder addStoredEnchantment(final Enchantment e, final int level) {
+    public PiranhaItemBuilder addStoredEnchantment(final Enchantment e, final int level) {
         this.storage.addStoredEnchant(e, level, true);
         return this;
     }
 
-    public ItemStackBuilder addEnchantment(final Enchantment e, final int level) {
+    public PiranhaItemBuilder addEnchantment(final Enchantment e, final int level) {
         this.meta.addEnchant(e, level, true);
         return this;
     }
 
-    public ItemStackBuilder setDurability(final int durability) {
+    public PiranhaItemBuilder setDurability(final int durability) {
         this.item.setDurability((short) durability);
         return this;
     }
 
-    public ItemStackBuilder setAmount(final int amount) {
+    public PiranhaItemBuilder setAmount(final int amount) {
         this.item.setAmount(amount);
         return this;
     }
 
-    public ItemStackBuilder replaceLore(final String oldLore, final String newLore) {
+    public PiranhaItemBuilder replaceLore(final String oldLore, final String newLore) {
         for (int i = 0; i < this.lore.size(); ++i) {
             if (this.lore.get(i).contains(oldLore)) {
                 this.lore.remove(i);
@@ -153,7 +153,7 @@ public class ItemStackBuilder {
         return this.item;
     }
 
-    public ItemStackBuilder addGlow() {
+    public PiranhaItemBuilder addGlow() {
         this.item2 = CraftItemStack.asNMSCopy(this.item);
         NBTTagCompound tag = null;
         if (!this.item2.hasTag()) {

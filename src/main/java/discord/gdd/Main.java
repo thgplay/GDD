@@ -1,12 +1,14 @@
 package discord.gdd;
 
+import discord.gdd.Utils.Reflection;
 import discord.gdd.Utils.RunnableAPI;
 import discord.gdd.Utils.Vault;
 import discord.gdd.customentity.MobUtils;
 import discord.gdd.pentest.NetworkWatcher;
 import lombok.Getter;
-import lombok.Setter;
+import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.command.Command;
 import org.bukkit.plugin.java.annotation.plugin.Description;
 import org.bukkit.plugin.java.annotation.plugin.LogPrefix;
 import org.bukkit.plugin.java.annotation.plugin.Plugin;
@@ -35,8 +37,25 @@ public class Main extends JavaPlugin{
         watcher = new NetworkWatcher();
         mobUtils = new MobUtils();
         vault = new Vault();
-        vault.
         mobUtils.registrarTodos();
+        Reflection.getPackages(getFile(), getDescription().getMain().replace(".Main", "").replace(".", "-").split("-")[0])
+                .forEach(c -> {
+                    if (Listener.class.isAssignableFrom(c)) {
+                        try {
+                            getServer().getPluginManager().registerEvents((Listener) c.newInstance(), this);
+                        } catch (Exception e) {
+                            getServer().getConsoleSender().sendMessage("(Evento):" + e.getMessage());
+                        }
+                    }
+                    if (Command.class.isAssignableFrom(c)) {
+                        try {
+                            Reflection.createCommand((Command) c.newInstance());
+                        } catch (Exception e) {
+                            getServer().getConsoleSender().sendMessage("(Comando):" + e.getMessage());
+                        }
+                    }
+                });
+        ;
     }
 
     //Aqui Inicia o modulo de network watcher
