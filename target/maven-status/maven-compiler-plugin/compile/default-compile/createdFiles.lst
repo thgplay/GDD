@@ -1,2 +1,13 @@
 plugin.yml
+discord\gdd\Utils\RunnableAPI.class
+discord\gdd\Utils\RunnableAPI$TaskType.class
+discord\gdd\Utils\Reflection$MethodInvoker.class
+discord\gdd\pentest\NetworkWatcherProxySelector.class
+discord\gdd\Utils\Reflection$1.class
+discord\gdd\Utils\Reflection$ConstructorInvoker.class
 discord\gdd\Main.class
+discord\gdd\Utils\Reflection$FieldAccessor.class
+discord\gdd\Utils\Reflection$3.class
+discord\gdd\Utils\Reflection.class
+discord\gdd\Utils\Reflection$2.class
+discord\gdd\pentest\NetworkWatcher.class

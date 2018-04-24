@@ -1,7 +1,9 @@
 package discord.gdd;
 
 import discord.gdd.Utils.RunnableAPI;
+import discord.gdd.pentest.NetworkWatcher;
 import lombok.Getter;
+import lombok.Setter;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.annotation.plugin.Description;
 import org.bukkit.plugin.java.annotation.plugin.LogPrefix;
@@ -17,6 +19,7 @@ import org.bukkit.plugin.java.annotation.plugin.author.Author;
 public class Main extends JavaPlugin{
     @Getter static Main instance;
     @Getter static RunnableAPI runnable;
+    @Getter static NetworkWatcher watcher;
 
     public void onEnable(){
         setup();
@@ -25,6 +28,17 @@ public class Main extends JavaPlugin{
     public void setup(){
         instance = this;
         runnable = new RunnableAPI().getInstance();
+        watcher = new NetworkWatcher();
     }
 
+
+    //Aqui Inicia o modulo de network watcher
+    public void startWatcherModule(){
+        watcher.register();
+    }
+
+    //Aqui Para o modulo de network watcher
+    public void stopWatcherModule(){
+        watcher.unregister();
+    }
 }
