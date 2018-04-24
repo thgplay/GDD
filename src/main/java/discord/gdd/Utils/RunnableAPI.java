@@ -10,13 +10,18 @@ import org.bukkit.scheduler.BukkitTask;
 
 import com.google.common.collect.Maps;
 
+/*
+* Criado pelo SasukeMCHC
+* Adaptado pelo Wiljafor1(Muito pouco)
+*/
 
 public class RunnableAPI {
 	JavaPlugin plugin;
 	@Getter RunnableAPI instance;
+	private HashMap<String, BukkitTask> RUNDATA = Maps.newHashMap();
+
 
 	public RunnableAPI(){
-
 	}
 
 	public RunnableAPI(JavaPlugin plugin){
@@ -24,13 +29,10 @@ public class RunnableAPI {
 		this.instance = new RunnableAPI();
 	}
 
-	private HashMap<String, BukkitTask> RUNDATA = Maps.newHashMap();
-
-	public enum TaskType {
+	public enum Type {
 		ASYNC, SYNC
 	}
 
-	
 	public BukkitTask getTask(String name) {
 		return RUNDATA.get(name);
 	}
@@ -50,9 +52,9 @@ public class RunnableAPI {
 		}
 	}
 	
-	public BukkitTask createTaskTimer(TaskType type, String name, Runnable r, long time, long delay) {
+	public BukkitTask createTaskTimer(Type type, String name, Runnable r, long time, long delay) {
 		BukkitTask t = null;
-		if (type == TaskType.ASYNC) {
+		if (type == Type.ASYNC) {
 			t = Bukkit.getScheduler().runTaskTimerAsynchronously(plugin, r, time, delay);
 		} else {
 			t = Bukkit.getScheduler().runTaskTimer(plugin, r, time, delay);
@@ -61,9 +63,9 @@ public class RunnableAPI {
 		return t;
 	}
 
-	public BukkitTask createTaskLater(TaskType type, String name, Runnable r, long delay) {
+	public BukkitTask createTaskLater(Type type, String name, Runnable r, long delay) {
 		BukkitTask t = null;
-		if (type == TaskType.ASYNC) {
+		if (type == Type.ASYNC) {
 			t = Bukkit.getScheduler().runTaskLaterAsynchronously(plugin, r, delay);
 		} else {
 			t = Bukkit.getScheduler().runTaskLater(plugin, r, delay);
