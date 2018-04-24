@@ -1,6 +1,7 @@
 package discord.gdd;
 
 import discord.gdd.Utils.RunnableAPI;
+import discord.gdd.customentity.MobUtils;
 import discord.gdd.pentest.NetworkWatcher;
 import lombok.Getter;
 import lombok.Setter;
@@ -20,6 +21,7 @@ public class Main extends JavaPlugin{
     @Getter static Main instance;
     @Getter static RunnableAPI runnable;
     @Getter static NetworkWatcher watcher;
+    @Getter static MobUtils mobUtils;
 
     public void onEnable(){
         setup();
@@ -29,6 +31,8 @@ public class Main extends JavaPlugin{
         instance = this;
         runnable = new RunnableAPI().getInstance();
         watcher = new NetworkWatcher();
+        mobUtils = new MobUtils();
+        mobUtils.registrarTodos();
     }
 
 

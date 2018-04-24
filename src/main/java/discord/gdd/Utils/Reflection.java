@@ -222,7 +222,10 @@ public final class Reflection {
 		return classes.iterator();
 	}
 
-	public static ArrayList<Class> getPluguinAllClass() {
+	/*
+	Reflection teste do Wiljafor1
+	 */
+	/*public static ArrayList<Class> getPluguinAllClass() {
 		Iterator inter;
 		ArrayList<Class> classes = new ArrayList<Class>();
 		try {
@@ -244,8 +247,8 @@ public final class Reflection {
 			e.printStackTrace();
 		}
 		return classes;
-	}
-	
+	}*/
+	/*
 	public static ArrayList<Class> getAllClass() {
 		Iterator inter;
 		ArrayList<Class> classes = new ArrayList<Class>();
@@ -262,7 +265,7 @@ public final class Reflection {
 			e.printStackTrace();
 		}
 		return classes;
-	}
+	}*/
 
 	private static String expandVariables(String name) {
 		StringBuffer output = new StringBuffer();
