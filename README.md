@@ -16,9 +16,9 @@
 Caso você tenha uma api / idéia para colocar no ggd api, se sim, envie pelo grupo ou https://github.com/wiljafor1/GDD-API/pulls que as pessoas irão analisar e aprovar,
 
 #### Discord
-1. [Grupo do Discord](https://discord.gg/aZzjhqf)
-2. [Gabriel (Fundador)] (https://www.youtube.com/channel/UCpybde151VdCFhdGQZ2bLBA)
-3. [Eduard (Fundador)] (https://www.youtube.com/channel/UCaXE5yCDj1-QIg8ZODUVCqw)
+1. [Grupo do Discord](https://discord.gg/aZzjhqf) 
+2. [Gabriel](https://www.youtube.com/channel/UCpybde151VdCFhdGQZ2bLBA) Fundador
+3. [Eduard](https://www.youtube.com/channel/UCaXE5yCDj1-QIg8ZODUVCqw) Fundador
 
 Copyright © 2018 GDD API - Todos os direitos reservados Gabriel || Thg & Eduard
 
