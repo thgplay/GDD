@@ -13,9 +13,7 @@
 
 ##requisitos
 
-You will need a functional, running Red5 Pro server web- (or locally-) accessible for the client browser (mobile & desktop) to connect to.
-
-For more information visit [Red5Pro.com](http://red5pro.com).
+Caso você tenha uma api / idéia para colocar no ggd api, se sim, envie pelo grupo ou https://github.com/wiljafor1/GDD-API/pulls que as pessoas irão analisar e aprovar,
 
 #### Discord
 1. [Discord]: (https://discord.gg/aZzjhqf)
