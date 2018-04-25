@@ -1,5 +1,3 @@
-package discord.gdd.exemplos;
-
 import discord.gdd.Main;
 import discord.gdd.tab.Tab;
 import discord.gdd.tab.item.PlayerTabItem;
@@ -56,8 +54,6 @@ public class ExemploTab {
     }
 
     public void simpleupdate() {//:D
-        Bukkit.getOnlinePlayers().forEach(v -> {
-            update(v);
-        });
+        Bukkit.getOnlinePlayers().forEach(this::update);
     }
 }
