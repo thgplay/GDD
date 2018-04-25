@@ -26,7 +26,7 @@ Copyright © 2018 GDD API - Todos os direitos reservados Gabriel || Thg & Eduard
 
 ### exemplos
 
-| **[Publisher](src/main/java/discord/gdd/forge/ForgeAPI.java)**
+| **[FORGE](src/main/java/discord/gdd/forge/ForgeAPI.java)**
 | :-----
 | *Um exemplo de como conseguir interagir com o forge em servers normais.<br>* Em breve mais exemplos.
 
