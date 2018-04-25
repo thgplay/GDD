@@ -1,5 +1,6 @@
 package discord.gdd;
 
+import discord.gdd.config.json.JsonConfiguration;
 import discord.gdd.utils.Reflection;
 import discord.gdd.utils.RunnableAPI;
 import discord.gdd.utils.Vault;
@@ -34,6 +35,8 @@ public class Main extends JavaPlugin{
     @Getter static Vault vault;
     @Getter static ForgeAPI forge;
     @Getter static Tab tab;
+    @Getter static JsonConfiguration config;
+    @Getter static JsonConfiguration configMensagens;
 
     public void onEnable(){
         setup();
@@ -47,6 +50,9 @@ public class Main extends JavaPlugin{
         vault = new Vault();
         mobUtils.registrarTodos();
         forge = new ForgeAPI();
+        config = new JsonConfiguration(this);
+        // colocar o .json no nome da config é opcional, se omitido a API ira colocar
+        configMensagens = new JsonConfiguration(this, "mensagens.json");
         Reflection.getPackages(getFile(), getDescription().getMain().replace(".Main", "").replace(".", "-").split("-")[0])
                 .forEach(c -> {
                     if (Listener.class.isAssignableFrom(c)) {
