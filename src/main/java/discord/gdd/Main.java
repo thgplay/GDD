@@ -1,21 +1,23 @@
 package discord.gdd;
 
 import discord.gdd.config.json.JsonConfiguration;
-import discord.gdd.utils.Reflection;
-import discord.gdd.utils.RunnableAPI;
-import discord.gdd.utils.Vault;
 import discord.gdd.customentity.MobUtils;
 import discord.gdd.forge.ForgeAPI;
 import discord.gdd.pentest.NetworkWatcher;
 import discord.gdd.tab.Tab;
+import discord.gdd.utils.Reflection;
+import discord.gdd.utils.RunnableAPI;
+import discord.gdd.utils.Vault;
 import lombok.Getter;
+import org.bukkit.command.Command;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.command.Command;
 import org.bukkit.plugin.java.annotation.plugin.Description;
 import org.bukkit.plugin.java.annotation.plugin.LogPrefix;
 import org.bukkit.plugin.java.annotation.plugin.Plugin;
 import org.bukkit.plugin.java.annotation.plugin.author.Author;
+
+import java.util.Set;
 
 @Plugin(name = "GDD-API", version = "1.0")
 @Description(desc = "Uma api feita pelos membros do grupo do discord Grupo de Desenvolvendores(Quem quiser melhorar so falar)")
@@ -27,7 +29,7 @@ import org.bukkit.plugin.java.annotation.plugin.author.Author;
 GDD API
 */
 
-public class Main extends JavaPlugin{
+public class Main extends JavaPlugin {
     @Getter static Main instance;
     @Getter static RunnableAPI runnable;
     @Getter static NetworkWatcher watcher;
@@ -38,11 +40,11 @@ public class Main extends JavaPlugin{
     @Getter static JsonConfiguration config;
     @Getter static JsonConfiguration configMensagens;
 
-    public void onEnable(){
+    public void onEnable() {
         setup();
     }
 
-    public void setup(){
+    public void setup() {
         instance = this;
         runnable = new RunnableAPI().getInstance();
         watcher = new NetworkWatcher();
@@ -53,33 +55,27 @@ public class Main extends JavaPlugin{
         config = new JsonConfiguration(this);
         // colocar o .json no nome da config é opcional, se omitido a API ira colocar
         configMensagens = new JsonConfiguration(this, "mensagens.json");
-        Reflection.getPackages(getFile(), getDescription().getMain().replace(".Main", "").replace(".", "-").split("-")[0])
-                .forEach(c -> {
-                    if (Listener.class.isAssignableFrom(c)) {
-                        try {
-                            getServer().getPluginManager().registerEvents((Listener) c.newInstance(), this);
-                        } catch (Exception e) {
-                            getServer().getConsoleSender().sendMessage("(Evento):" + e.getMessage());
-                        }
-                    }
-                    if (Command.class.isAssignableFrom(c)) {
-                        try {
-                            Reflection.createCommand((Command) c.newInstance());
-                        } catch (Exception e) {
-                            getServer().getConsoleSender().sendMessage("(Comando):" + e.getMessage());
-                        }
-                    }
-                });
-        ;
+
+        Set<Class<?>> packages = Reflection.getPackages(getFile(),
+                getDescription().getMain()
+                        .replace(".Main", "")
+                        .replace(".", "-")
+                        .split("-")[0]);
+        packages.stream()
+                .filter(Listener.class::isAssignableFrom)
+                .forEach(Reflection::registarListener);
+        packages.stream()
+                .filter(Command.class::isAssignableFrom)
+                .forEach(Reflection::registerCommand);
     }
 
     //Aqui Inicia o modulo de network watcher
-    public void startWatcherModule(){
+    public void startWatcherModule() {
         watcher.register();
     }
 
     //Aqui Para o modulo de network watcher
-    public void stopWatcherModule(){
+    public void stopWatcherModule() {
         watcher.unregister();
     }
 

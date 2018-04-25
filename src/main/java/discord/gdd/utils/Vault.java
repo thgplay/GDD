@@ -3,6 +3,7 @@ package discord.gdd.utils;
 Criado por MrD4rkBr
 */
 
+import discord.gdd.Main;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
@@ -11,22 +12,20 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 public class Vault {
 
     public Vault(){
-        setupEconomy();
+        if (!setupEconomy()){
+            // Hue, deu erro ao ativar o Vault?! Vamo desativar o plugin?
+            Bukkit.getPluginManager().disablePlugin(Main.getInstance());
+        }
     }
 
     public Economy economy = null;
 
     private boolean setupEconomy() {
+        RegisteredServiceProvider<Economy> economyProvider = Bukkit.getServer().getServicesManager().getRegistration(Economy.class);
 
-        RegisteredServiceProvider<Economy> economyProvider = Bukkit.getServer().getServicesManager()
-                .getRegistration(net.milkbowl.vault.economy.Economy.class);
-        if (economyProvider != null) {
-            economy = economyProvider.getProvider();
-
-        }
+        if (economyProvider != null) economy = economyProvider.getProvider();
 
         return economy != null;
-
     }
 
     public double getMoney(OfflinePlayer p) {

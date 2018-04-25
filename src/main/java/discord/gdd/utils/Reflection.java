@@ -1,26 +1,21 @@
 package discord.gdd.utils;
 
+import discord.gdd.Main;
+import org.bukkit.Bukkit;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandMap;
+import org.bukkit.event.Listener;
+
 import java.io.File;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.Enumeration;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
-import java.util.Vector;
+import java.util.*;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
-
-import org.bukkit.Bukkit;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandMap;
-import org.bukkit.event.Listener;
 
 /*
 Api feito pelo @author Kristian, nao conseguir achar um local original
@@ -49,7 +44,16 @@ public final class Reflection {
 	private static String VERSION = OBC_PREFIX.replace("org.bukkit.craftbukkit", "").replace(".", "");
 	private static String BUNGEE = "net.md_5.bungee";
 
+	private static Field COMMAND_MAP;
+
 	private static Pattern MATCH_VARIABLE = Pattern.compile("\\{([^\\}]+)\\}");
+
+	static {
+		try {
+			COMMAND_MAP = Reflection.getCraftBukkitClass("CraftServer").getDeclaredField("commandMap");
+			COMMAND_MAP.setAccessible(true);
+		} catch (NoSuchFieldException ignored) { }
+	}
 
 	private Reflection() {
 		// Seal class
@@ -320,19 +324,32 @@ public final class Reflection {
 	}
 
 	public static void createCommand(Command... cmds) {
-		Class<?> CraftServers = Reflection.getCraftBukkitClass("CraftServer").getClass();
 		try {
 			Field f = Reflection.getCraftBukkitClass("CraftServer").getDeclaredField("commandMap");
 			f.setAccessible(true);
 
 			CommandMap map = (CommandMap) f.get(Bukkit.getServer());
-			Command[] arrayOfCommand = cmds;
-			int j = cmds.length;
-			for (int i = 0; i < j; i++) {
-				Command cmd = arrayOfCommand[i];
+			for (Command cmd : cmds) {
 				map.register("comandos", cmd);
 			}
-		} catch (Exception localException) {
+		} catch (Exception e) {
+			Bukkit.getServer().getConsoleSender().sendMessage("Erro ao inicializar os Comandos: " + e.getMessage());
+		}
+	}
+
+	public static void registarListener(Class<?> clazz) {
+		try {
+			Bukkit.getPluginManager().registerEvents((Listener) clazz.newInstance(), Main.getInstance());
+		} catch (Exception e) {
+			Bukkit.getConsoleSender().sendMessage("Erro ao inicializar o listener `" + clazz.getName() + "`: " + e.getMessage());
+		}
+	}
+
+	public static void registerCommand(Class<?> clazz) {
+		try {
+			((CommandMap) COMMAND_MAP.get(Bukkit.getServer())).register(Main.getInstance().getName(), (Command) clazz.newInstance());
+		} catch (Exception e) {
+			Bukkit.getServer().getConsoleSender().sendMessage("Erro ao inicializar o Comando `" + clazz.getName() + "`: " + e.getMessage());
 		}
 	}
 	
