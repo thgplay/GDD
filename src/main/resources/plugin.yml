@@ -1,0 +1,6 @@
+name: ${project.artifactId}
+main: ${project.groupId}.Main
+version: ${project.version}
+authors: [Heroslender, Wiljafor1]
+description: Uma api de utilitarios, como custom entity, config, base de dados, etc
+website: https://github.com/thgplay/GDD
