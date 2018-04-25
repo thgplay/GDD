@@ -7,13 +7,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 import discord.gdd.Main;
-import discord.gdd.Utils.RunnableAPI;
+import discord.gdd.utils.RunnableAPI;
 import lombok.Getter;
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.*;
 import org.bukkit.event.player.*;
-import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.messaging.PluginMessageListener;
 
 
@@ -49,7 +47,7 @@ public class ForgeAPI implements Listener, PluginMessageListener {
 			public void run() {
 				if(getManager().getProcurarMod(e.getPlayer(), "Schematica") != null) {
 					Mod m = getManager().getProcurarMod(e.getPlayer(), "Schematica");
-					e.getPlayer().kickPlayer("§eNOMEDOSERVER \n §4Nosso Sistema Detectou uso de mod. \n §2Mod:"+m.getName()+" \n §4[Criado por Wiljafor1]");
+					e.getPlayer().kickPlayer("ï¿½eNOMEDOSERVER \n ï¿½4Nosso Sistema Detectou uso de mod. \n ï¿½2Mod:"+m.getName()+" \n ï¿½4[Criado por Wiljafor1]");
 				}
 			}
 		}, 20*2);

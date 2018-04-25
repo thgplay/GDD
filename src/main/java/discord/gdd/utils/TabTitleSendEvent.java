@@ -1,4 +1,4 @@
-package discord.gdd.Utils;
+package discord.gdd.utils;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;

@@ -1,6 +1,6 @@
 package discord.gdd.customentity;
 
-import discord.gdd.Utils.Reflection;
+import discord.gdd.utils.Reflection;
 import discord.gdd.customentity.Type.*;
 import net.minecraft.server.v1_8_R3.*;
 import org.bukkit.craftbukkit.v1_8_R3.util.UnsafeList;

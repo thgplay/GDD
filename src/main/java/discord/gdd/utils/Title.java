@@ -1,4 +1,4 @@
-package discord.gdd.Utils;
+package discord.gdd.utils;
 
 
 
@@ -9,7 +9,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 
 
-import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 
 public class Title implements Listener{

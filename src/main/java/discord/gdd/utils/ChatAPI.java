@@ -1,7 +1,6 @@
-package discord.gdd.Utils;
+package discord.gdd.utils;
 
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
 
 /**
  * API de manipulaÃ§Ã£o de Cores e CHAT do Minecraft

@@ -1,4 +1,4 @@
-package discord.gdd.Utils;
+package discord.gdd.utils;
 
 import java.util.HashMap;
 import java.util.Map;

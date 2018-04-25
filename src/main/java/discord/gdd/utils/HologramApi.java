@@ -1,4 +1,4 @@
-package discord.gdd.Utils;
+package discord.gdd.utils;
 import discord.gdd.Main;
 import lombok.Getter;
 import org.bukkit.entity.*;

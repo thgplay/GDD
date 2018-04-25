@@ -1,4 +1,4 @@
-package discord.gdd.Utils;
+package discord.gdd.utils;
 /*
 Criado por MrD4rkBr
 */

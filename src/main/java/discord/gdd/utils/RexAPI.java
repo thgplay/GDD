@@ -1,4 +1,4 @@
-package discord.gdd.Utils;
+package discord.gdd.utils;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;

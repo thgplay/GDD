@@ -1,12 +1,10 @@
-package discord.gdd.Utils;
+package discord.gdd.utils;
 
 import java.io.File;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Enumeration;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -23,7 +21,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandMap;
 import org.bukkit.event.Listener;
-import org.bukkit.plugin.Plugin;
+
 /*
 Api feito pelo @author Kristian, nao conseguir achar um local original
 objetivo de ela estar aqui e bem simples, ela tem algumas coisas bem ulteis, vou traduzir ela e colocar mais coisas.

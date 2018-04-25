@@ -1,8 +1,8 @@
 package discord.gdd;
 
-import discord.gdd.Utils.Reflection;
-import discord.gdd.Utils.RunnableAPI;
-import discord.gdd.Utils.Vault;
+import discord.gdd.utils.Reflection;
+import discord.gdd.utils.RunnableAPI;
+import discord.gdd.utils.Vault;
 import discord.gdd.customentity.MobUtils;
 import discord.gdd.forge.ForgeAPI;
 import discord.gdd.pentest.NetworkWatcher;

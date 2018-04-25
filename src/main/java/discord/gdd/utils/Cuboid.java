@@ -1,4 +1,4 @@
-package discord.gdd.Utils;
+package discord.gdd.utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
