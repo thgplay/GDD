@@ -1,13 +1,13 @@
 package discord.gdd.utils;
 import discord.gdd.Main;
 import lombok.Getter;
-import org.bukkit.entity.*;
-import org.bukkit.*;
-import org.bukkit.craftbukkit.v1_8_R3.CraftWorld;
-import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
 import net.minecraft.server.v1_8_R3.EntityArmorStand;
 import net.minecraft.server.v1_8_R3.PacketPlayOutEntityDestroy;
 import net.minecraft.server.v1_8_R3.PacketPlayOutSpawnEntityLiving;
+import org.bukkit.craftbukkit.v1_8_R3.CraftWorld;
+import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
+import org.bukkit.entity.*;
+import org.bukkit.*;
 
 /*
 Criado por Wiljafor1
