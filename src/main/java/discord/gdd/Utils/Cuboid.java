@@ -32,14 +32,8 @@ public class Cuboid implements Cloneable, ConfigurationSerializable, Iterable<Bl
             }
             this.worldName = loc1.getWorld().getName();
 
-            double xPos1 = Math.min(loc1.getX(), loc2.getX());
-            double yPos1 = Math.min(loc1.getY(), loc2.getY());
-            double zPos1 = Math.min(loc1.getZ(), loc2.getZ());
-            double xPos2 = Math.max(loc1.getX(), loc2.getX());
-            double yPos2 = Math.max(loc1.getY(), loc2.getY());
-            double zPos2 = Math.max(loc1.getZ(), loc2.getZ());
-            this.minimumPoint = new Vector(xPos1, yPos1, zPos1);
-            this.maximumPoint = new Vector(xPos2, yPos2, zPos2);
+            this.minimumPoint = Vector.getMinimum(loc1.toVector(), loc2.toVector());
+            this.maximumPoint = Vector.getMaximum(loc1.toVector(), loc2.toVector());
         } else {
             throw new NullPointerException("One/both of the locations is/are null!");
         }
