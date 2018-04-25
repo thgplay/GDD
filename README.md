@@ -30,6 +30,7 @@ Caso você tenha uma API/ideia para colocar na GDD-API, envie pelo grupo ou [Pul
 | **[Forge API](src/main/java/discord/gdd/forge/ForgeAPI.java)**
 | :-----
 | *Um exemplo de como conseguir interagir com o forge em servers normais.
+
  Em breve mais exemplos.
 
 ## Notas
