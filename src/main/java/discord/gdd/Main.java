@@ -4,6 +4,7 @@ import discord.gdd.Utils.Reflection;
 import discord.gdd.Utils.RunnableAPI;
 import discord.gdd.Utils.Vault;
 import discord.gdd.customentity.MobUtils;
+import discord.gdd.forge.ForgeAPI;
 import discord.gdd.pentest.NetworkWatcher;
 import lombok.Getter;
 import org.bukkit.event.Listener;
@@ -30,6 +31,7 @@ public class Main extends JavaPlugin{
     @Getter static NetworkWatcher watcher;
     @Getter static MobUtils mobUtils;
     @Getter static Vault vault;
+    @Getter static ForgeAPI forge;
 
     public void onEnable(){
         setup();
@@ -42,6 +44,7 @@ public class Main extends JavaPlugin{
         mobUtils = new MobUtils();
         vault = new Vault();
         mobUtils.registrarTodos();
+        forge = new ForgeAPI();
         Reflection.getPackages(getFile(), getDescription().getMain().replace(".Main", "").replace(".", "-").split("-")[0])
                 .forEach(c -> {
                     if (Listener.class.isAssignableFrom(c)) {
