@@ -2,34 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08a6bc45-a39e-4e52-b30c-b53d5495a156" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/bungee/BungeeAPI.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/database/Mysql.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/database/Sqlite.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Main.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/BukkitAPI.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/BukkitAPI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/BungeeAPI.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/BungeeAPI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/ChatAPI.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/ChatAPI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/CooldownAPI.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/CooldownAPI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/Cuboid.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/Cuboid.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/ExtraAPI.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/ExtraAPI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/GameAPI.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/GameAPI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/HologramApi.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/HologramApi.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/ItemAPI.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/ItemAPI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/ItemBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/ItemBuilder.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/PiranhaCooldown.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/PiranhaCooldown.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/PiranhaItemBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/PiranhaItemBuilder.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/Reflection.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/Reflection.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/ReflectionActionBar.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/ReflectionActionBar.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/RexAPI.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/RexAPI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/RunnableAPI.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/RunnableAPI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/SasukeItem.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/SasukeItem.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/ScoreBoard.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/ScoreBoard.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/TabTitleSendEvent.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/TabTitleSendEvent.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/Title.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/Title.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/TitleSendEvent.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/TitleSendEvent.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/Vault.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/Vault.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/WorldAPI.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/WorldAPI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/MobUtils.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/customentity/MobUtils.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/forge/ForgeAPI.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/forge/ForgeAPI.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/bungee/BungeeAPI.java" afterPath="$PROJECT_DIR$/src/main/java/discord/gdd/bungee/BungeeAPI.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/database/PiranhaDataBase.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/discord/gdd/utils/BungeeAPI.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,8 +23,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+            <state relative-caret-position="386">
+              <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -76,35 +54,86 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BungeeAPI.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BungeeAPI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/bungee/BungeeAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PiranhaDataBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/database/PiranhaDataBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="42" column="54" lean-forward="true" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
+            <state relative-caret-position="85">
+              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
               <folding>
-                <element signature="e#982#983#0" expanded="true" />
-                <element signature="e#1027#1028#0" expanded="true" />
-                <element signature="e#1089#1090#0" expanded="true" />
-                <element signature="e#1144#1145#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#4895#4896#0" expanded="true" />
+                <element signature="e#4932#4933#0" expanded="true" />
+                <element signature="e#4998#4999#0" expanded="true" />
+                <element signature="e#5047#5048#0" expanded="true" />
+                <element signature="e#5106#5107#0" expanded="true" />
+                <element signature="e#5152#5153#0" expanded="true" />
+                <element signature="e#5220#5221#0" expanded="true" />
+                <element signature="e#5275#5276#0" expanded="true" />
+                <element signature="e#5342#5343#0" expanded="true" />
+                <element signature="e#5397#5398#0" expanded="true" />
+                <element signature="e#5455#5456#0" expanded="true" />
+                <element signature="e#5509#5510#0" expanded="true" />
+                <element signature="e#5572#5573#0" expanded="true" />
+                <element signature="e#5625#5626#0" expanded="true" />
+                <element signature="e#5677#5678#0" expanded="true" />
+                <element signature="e#5729#5730#0" expanded="true" />
+                <element signature="e#5794#5795#0" expanded="true" />
+                <element signature="e#5847#5848#0" expanded="true" />
+                <element signature="e#5906#5907#0" expanded="true" />
+                <element signature="e#5954#5955#0" expanded="true" />
+                <element signature="e#6019#6020#0" expanded="true" />
+                <element signature="e#6071#6072#0" expanded="true" />
+                <element signature="e#8338#8339#0" expanded="true" />
+                <element signature="e#8398#8399#0" expanded="true" />
+                <element signature="e#8679#8680#0" expanded="true" />
+                <element signature="e#8753#8754#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoDB.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BukkitAPI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/utils/BukkitAPI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="784">
+              <caret line="494" column="33" lean-forward="false" selection-start-line="494" selection-start-column="26" selection-end-line="494" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mysql.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/database/Mysql.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-378">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sqlite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/database/Sqlite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-480">
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#716#717#0" expanded="true" />
+                <element signature="e#752#753#0" expanded="true" />
+                <element signature="e#801#802#0" expanded="true" />
+                <element signature="e#847#848#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MongoDB.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/database/MongoDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="102">
               <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
               <folding />
             </state>
@@ -142,9 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/GlowEnchantment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/ItemBuilder.java" />
-        <option value="$PROJECT_DIR$/../Eclipe-WorkSpace/Synapse/src/main/java/rpg/utils/SimpleItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/SasukeItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/RunnableAPI.java" />
         <option value="$PROJECT_DIR$/src/main/java/discord/gdd/Utils/HologramApi.java" />
@@ -192,6 +218,9 @@
         <option value="$PROJECT_DIR$/src/main/java/discord/gdd/exemplos/ExemploTab.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/discord/gdd/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/discord/gdd/database/Sqlite.java" />
+        <option value="$PROJECT_DIR$/src/main/java/discord/gdd/database/Mysql.java" />
+        <option value="$PROJECT_DIR$/src/main/java/discord/gdd/utils/BungeeAPI.java" />
         <option value="$PROJECT_DIR$/src/main/java/discord/gdd/bungee/BungeeAPI.java" />
       </list>
     </option>
@@ -313,6 +342,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gdd" type="462c0819:PsiDirectoryNode" />
               <item name="forge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GDDAPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GDD" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gdd" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GDDAPI" type="b2602c69:ProjectViewProjectNode" />
@@ -526,24 +564,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/KitApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="91" column="8" lean-forward="true" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/utils/ScoreBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-          <folding>
-            <element signature="e#548#549#0" expanded="false" />
-            <element signature="e#581#582#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/utils/HologramApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -609,22 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/utils/BukkitAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="494" column="33" lean-forward="false" selection-start-line="494" selection-start-column="26" selection-end-line="494" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/utils/BungeeAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/utils/ExtraAPI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-738">
@@ -668,6 +672,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -689,6 +694,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -713,6 +719,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -790,8 +797,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        <state relative-caret-position="386">
+          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -816,32 +823,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/bungee/BungeeAPI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/database/MongoDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/database/PiranhaDataBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="42" column="54" lean-forward="true" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
+        <state relative-caret-position="68">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/database/Mysql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1027#1028#0" expanded="true" />
-            <element signature="e#1089#1090#0" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/database/MongoDB.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/database/Sqlite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        <state relative-caret-position="-480">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/utils/BungeeAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/utils/BukkitAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="494" column="33" lean-forward="false" selection-start-line="494" selection-start-column="26" selection-end-line="494" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/discord/gdd/bungee/BungeeAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4895#4896#0" expanded="true" />
+            <element signature="e#4932#4933#0" expanded="true" />
+            <element signature="e#4998#4999#0" expanded="true" />
+            <element signature="e#5047#5048#0" expanded="true" />
+            <element signature="e#5106#5107#0" expanded="true" />
+            <element signature="e#5152#5153#0" expanded="true" />
+            <element signature="e#5220#5221#0" expanded="true" />
+            <element signature="e#5275#5276#0" expanded="true" />
+            <element signature="e#5342#5343#0" expanded="true" />
+            <element signature="e#5397#5398#0" expanded="true" />
+            <element signature="e#5455#5456#0" expanded="true" />
+            <element signature="e#5509#5510#0" expanded="true" />
+            <element signature="e#5572#5573#0" expanded="true" />
+            <element signature="e#5625#5626#0" expanded="true" />
+            <element signature="e#5677#5678#0" expanded="true" />
+            <element signature="e#5729#5730#0" expanded="true" />
+            <element signature="e#5794#5795#0" expanded="true" />
+            <element signature="e#5847#5848#0" expanded="true" />
+            <element signature="e#5906#5907#0" expanded="true" />
+            <element signature="e#5954#5955#0" expanded="true" />
+            <element signature="e#6019#6020#0" expanded="true" />
+            <element signature="e#6071#6072#0" expanded="true" />
+            <element signature="e#8338#8339#0" expanded="true" />
+            <element signature="e#8398#8399#0" expanded="true" />
+            <element signature="e#8679#8680#0" expanded="true" />
+            <element signature="e#8753#8754#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

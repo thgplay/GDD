@@ -1,19 +1,20 @@
 package discord.gdd.database;
-
-import java.io.*;
-import java.sql.*;
-
 /*
 Criado pelo Frach - R.I.P. Avicii#6234 - Membro da GDD
 */
 
-public class PiranhaDataBase
-{
+import java.io.File;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class Sqlite {
     private Connection conn;
     private File file;
     private Statement stmt;
-    
-    private PiranhaDataBase(final File f) {
+
+    private Sqlite(final File f) {
         this.file = f;
         try {
             Class.forName("org.sqlite.JDBC");
@@ -24,30 +25,16 @@ public class PiranhaDataBase
             e.printStackTrace();
         }
     }
-    
-    private PiranhaDataBase(final String urlconn) {
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            this.conn = DriverManager.getConnection(urlconn);
-            this.stmt = this.conn.createStatement();
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
+
+    public static Sqlite load(final File f) {
+        return new Sqlite(f);
     }
-    
-    public static PiranhaDataBase load(final File f) {
-        return new PiranhaDataBase(f);
+
+    public static Sqlite load(final String f) {
+        return new Sqlite(new File(f));
     }
-    
-    public static PiranhaDataBase load(final String f) {
-        return new PiranhaDataBase(new File(f));
-    }
-    
-    public static PiranhaDataBase load(final String host, final String database, final String user, final String pass) {
-        return new PiranhaDataBase("jdbc:mysql://" + host + "/" + database + "?" + "user=" + user + "&password=" + pass);
-    }
-    
+
+
     public void update(final String q) {
         try {
             this.stmt.executeUpdate(q);
@@ -56,7 +43,7 @@ public class PiranhaDataBase
             e.printStackTrace();
         }
     }
-    
+
     public ResultSet query(final String q) {
         try {
             return this.stmt.executeQuery(q);
@@ -65,7 +52,7 @@ public class PiranhaDataBase
             return null;
         }
     }
-    
+
     public void close() {
         try {
             this.stmt.close();
@@ -73,7 +60,7 @@ public class PiranhaDataBase
         }
         catch (Exception ex) {}
     }
-    
+
     public boolean isConnected() {
         try {
             return this.stmt != null && this.conn != null && !this.stmt.isClosed() && !this.conn.isClosed();
@@ -82,7 +69,7 @@ public class PiranhaDataBase
             return false;
         }
     }
-    
+
     public Connection getConnection() {
         return this.conn;
     }
