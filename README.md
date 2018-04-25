@@ -1,6 +1,6 @@
 <div align="center">
     <h3>
-      <img src="GDD.png" alt="GGD" />
+      <img src="GDD.png" alt="GGD"/>
     </h3>
     <p>
       <a href="#requisitos">requisitos</a> &bull;
