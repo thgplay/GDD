@@ -1,4 +1,4 @@
-package discord.gdd.tag.tablist;
+package discord.gdd.tab.tablist;
 
 import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.wrappers.EnumWrappers.NativeGameMode;
@@ -8,9 +8,9 @@ import com.comphenix.protocol.wrappers.WrappedChatComponent;
 import com.comphenix.protocol.wrappers.WrappedGameProfile;
 import com.google.common.base.Preconditions;
 
-import discord.gdd.tag.Tab;
-import discord.gdd.tag.item.TabItem;
-import discord.gdd.tag.util.Packets;
+import discord.gdd.tab.Tab;
+import discord.gdd.tab.item.TabItem;
+import discord.gdd.tab.util.Packets;
 
 import org.bukkit.entity.Player;
 

@@ -6,6 +6,7 @@ import discord.gdd.Utils.Vault;
 import discord.gdd.customentity.MobUtils;
 import discord.gdd.forge.ForgeAPI;
 import discord.gdd.pentest.NetworkWatcher;
+import discord.gdd.tab.Tab;
 import lombok.Getter;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -32,6 +33,7 @@ public class Main extends JavaPlugin{
     @Getter static MobUtils mobUtils;
     @Getter static Vault vault;
     @Getter static ForgeAPI forge;
+    @Getter static Tab tab;
 
     public void onEnable(){
         setup();

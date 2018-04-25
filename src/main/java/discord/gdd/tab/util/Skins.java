@@ -1,4 +1,4 @@
-package discord.gdd.tag.util;
+package discord.gdd.tab.util;
 
 import com.comphenix.protocol.wrappers.WrappedGameProfile;
 import com.comphenix.protocol.wrappers.WrappedSignedProperty;
@@ -10,7 +10,7 @@ import com.google.common.collect.ArrayListMultimap;
 import com.google.common.io.CharStreams;
 
 
-import discord.gdd.tag.Tab;
+import discord.gdd.tab.Tab;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.EntityType;

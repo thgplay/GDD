@@ -1,10 +1,10 @@
-package discord.gdd.tag.tablist;
+package discord.gdd.tab.tablist;
 
 import com.google.common.base.Preconditions;
 
-import discord.gdd.tag.Tab;
-import discord.gdd.tag.item.BlankTabItem;
-import discord.gdd.tag.item.TabItem;
+import discord.gdd.tab.Tab;
+import discord.gdd.tab.item.BlankTabItem;
+import discord.gdd.tab.item.TabItem;
 
 import org.bukkit.entity.Player;
 

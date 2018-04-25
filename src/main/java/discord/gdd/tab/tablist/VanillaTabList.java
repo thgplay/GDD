@@ -1,4 +1,4 @@
-package discord.gdd.tag.tablist;
+package discord.gdd.tab.tablist;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -8,9 +8,9 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
-import discord.gdd.tag.Tab;
-import discord.gdd.tag.item.PlayerTabItem;
-import discord.gdd.tag.item.TabItem;
+import discord.gdd.tab.Tab;
+import discord.gdd.tab.item.PlayerTabItem;
+import discord.gdd.tab.item.TabItem;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package discord.gdd.tag.tablist;
+package discord.gdd.tab.tablist;
 
 import org.bukkit.entity.Player;
 

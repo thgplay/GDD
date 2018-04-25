@@ -1,6 +1,6 @@
-package discord.gdd.tag.item;
+package discord.gdd.tab.item;
 
-import discord.gdd.tag.util.Skin;
+import discord.gdd.tab.util.Skin;
 
 public interface TabItem {
     String getText();

@@ -1,4 +1,4 @@
-package discord.gdd.tag.util;
+package discord.gdd.tab.util;
 
 import com.comphenix.protocol.wrappers.WrappedSignedProperty;
 import com.google.common.base.Preconditions;

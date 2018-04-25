@@ -1,6 +1,6 @@
-package discord.gdd.tag.tablist;
+package discord.gdd.tab.tablist;
 
-import discord.gdd.tag.item.TabItem;
+import discord.gdd.tab.item.TabItem;
 
 public interface PersonalizadaTabList extends TabList {
     int getMaxItems();

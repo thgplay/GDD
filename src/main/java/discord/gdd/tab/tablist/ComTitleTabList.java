@@ -1,4 +1,4 @@
-package discord.gdd.tag.tablist;
+package discord.gdd.tab.tablist;
 
 import com.comphenix.protocol.PacketType.Play.Server;
 import com.comphenix.protocol.ProtocolLibrary;

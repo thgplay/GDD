@@ -1,8 +1,8 @@
-package discord.gdd.tag.item;
+package discord.gdd.tab.item;
 
 
-import discord.gdd.tag.util.Skin;
-import discord.gdd.tag.util.Skins;
+import discord.gdd.tab.util.Skin;
+import discord.gdd.tab.util.Skins;
 import lombok.Getter;
 
 import java.util.Objects;

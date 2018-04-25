@@ -1,9 +1,9 @@
-package discord.gdd.tag;
+package discord.gdd.tab;
 
 import com.avaje.ebeaninternal.server.core.RelationalQueryRequest;
 import com.google.common.base.Preconditions;
 
-import discord.gdd.tag.tablist.*;
+import discord.gdd.tab.tablist.*;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
