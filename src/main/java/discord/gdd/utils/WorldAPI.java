@@ -278,10 +278,10 @@ public final class WorldAPI {
 		return getLocations(low, high);
 	}
 
-	public static Location getRandomPosition(Location location, int xVar, int zVar) {
+	/*public static Location getRandomPosition(Location location, int xVar, int zVar) {
 		return getHighPosition(getRandomLocation(location, xVar, 0, zVar));
 
-	}
+	}*/
 
 	public static void unloadWorld(String name) {
 		try {
@@ -307,7 +307,7 @@ public final class WorldAPI {
 
 	}
 
-	public static Location getRandomLocation(Location location, int xVar, int yVar, int zVar) {
+	/*public static Location getRandomLocation(Location location, int xVar, int yVar, int zVar) {
 		int x = location.getBlockX();
 		int z = location.getBlockZ();
 		int y = location.getBlockY();
@@ -315,7 +315,7 @@ public final class WorldAPI {
 		int zR = ExtraAPI.getRandomInt(z - zVar, z + zVar);
 		int yR = ExtraAPI.getRandomInt(y - yVar, y + zVar);
 		return new Location(location.getWorld(), xR, yR, zR);
-	}
+	}*/
 
 	public static Location getHighPosition(Location location) {
 		return location.getWorld().getHighestBlockAt(location).getLocation();
