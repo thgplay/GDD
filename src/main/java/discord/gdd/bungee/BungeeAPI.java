@@ -262,4 +262,17 @@ public class BungeeAPI {
     public static Player getFirstPlayer() {
         return Iterables.getFirst(Bukkit.getOnlinePlayers(), null);
     }
+
+    /* Comecei a colocar coisas novas aqui */
+    /*public void sentTitle(){ Title em Bungee
+        ProxyServer.getInstance().createTitle()
+                .title(new ComponentBuilder("Title")
+                        .color(ChatColor.GOLD).create())
+                .subTitle(new ComponentBuilder("SubTitle")
+                        .color(ChatColor.YELLOW).create())
+                .fadeIn(20)
+                .stay(100)
+                .fadeOut(20)
+                .send(proxiedPlayer);
+    }*/
 }
