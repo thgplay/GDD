@@ -10,7 +10,7 @@ import java.lang.reflect.Constructor;
 Criado pelo Reityy#1427 - Membro da GDD
 */
 
-public class ReflectionActionBar {
+public class ActionBar {
 	
     public static void sendAction(Player p, String message){
     	 Class<?> playOutChat, baseComponent, chatMsg;
