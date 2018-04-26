@@ -50,8 +50,8 @@ Usando video de exemplo : https://www.youtube.com/watch?v=Fx8kgg6aVzM
         Pipeline pipeline = _CLIENT.pipelined();
         pipeline.set(path, ""+gson.toJsonTree(data));
         pipeline.expire(path, time);
-        pipeline.expireAt(path, System.currentTimeMillis() + TimeUnit.SECONDS.toMillis(time+1));
-        Main.getInstance().getServer().getConsoleSender().sendMessage(""+System.currentTimeMillis() + TimeUnit.SECONDS.toMillis(time+1));
+        pipeline.expireAt(path, (System.currentTimeMillis() + TimeUnit.SECONDS.toMillis(time+1)));
+        Main.getInstance().getServer().getConsoleSender().sendMessage(""+(System.currentTimeMillis() + TimeUnit.SECONDS.toMillis(time+1)));
         pipeline.persist(path);
         pipeline.sync();
     }
