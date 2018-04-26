@@ -12,18 +12,9 @@ import lombok.Getter;
 import org.bukkit.command.Command;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.plugin.java.annotation.plugin.Description;
-import org.bukkit.plugin.java.annotation.plugin.LogPrefix;
-import org.bukkit.plugin.java.annotation.plugin.Plugin;
-import org.bukkit.plugin.java.annotation.plugin.author.Author;
 
 import java.util.Set;
 
-@Plugin(name = "GDD-API", version = "1.0")
-@Description(desc = "Uma api feita pelos membros do grupo do discord Grupo de Desenvolvendores(Quem quiser melhorar so falar)")
-@Author(name = "Wiljafor1")
-@Author(name = "MrD4rkBr")
-@LogPrefix(prefix = "GDD")
 
 /*
 GDD API
@@ -78,6 +69,5 @@ public class Main extends JavaPlugin {
     public void stopWatcherModule() {
         watcher.unregister();
     }
-
 
 }
