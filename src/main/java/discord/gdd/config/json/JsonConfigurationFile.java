@@ -49,6 +49,13 @@ class JsonConfigurationFile {
     }
 
     private void loadFile() throws IOException {
+        File parent = configFile.getParentFile();
+        if (!parent.exists()) {
+            if (!parent.createNewFile()) {
+                log(Level.SEVERE, "Ocurreu um erro ao criar a config!");
+                return;
+            }
+        }
         if (!configFile.exists()) {
             log(Level.WARNING, "A config \"" + configFile.getName() + "\" não foi encontrada, a criar uma nova...");
             if (configFile.createNewFile())
