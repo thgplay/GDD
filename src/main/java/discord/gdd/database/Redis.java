@@ -1,8 +1,11 @@
 package discord.gdd.database;
 
 import com.google.gson.Gson;
+import discord.gdd.Main;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Pipeline;
+
+import java.util.concurrent.TimeUnit;
 
 public class Redis {
 /*
@@ -43,11 +46,12 @@ Usando video de exemplo : https://www.youtube.com/watch?v=Fx8kgg6aVzM
         }
     }
 
-    public void setCache(String path,Object data){
+    public void setCache(String path,Object data, int time){//Depois alguem ajeita isso kk ou eu msm faco isso
         Pipeline pipeline = _CLIENT.pipelined();
         pipeline.set(path, ""+gson.toJsonTree(data));
-        pipeline.expire(path, 500);
-        pipeline.expireAt(path, System.currentTimeMillis() + 5000);
+        pipeline.expire(path, time);
+        pipeline.expireAt(path, System.currentTimeMillis() + TimeUnit.SECONDS.toMillis(time+1));
+        Main.getInstance().getServer().getConsoleSender().sendMessage(""+System.currentTimeMillis() + TimeUnit.SECONDS.toMillis(time+1));
         pipeline.persist(path);
         pipeline.sync();
     }

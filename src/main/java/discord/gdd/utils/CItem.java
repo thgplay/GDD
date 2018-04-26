@@ -35,6 +35,8 @@ public class CItem implements Listener
 
     public Map<ItemStack, InventoryAction> inventorydata = Maps.newHashMap();
 
+    public CItem(){}
+
     public CItem(Material material)
     {
         this.item = new ItemStack(material, 1);

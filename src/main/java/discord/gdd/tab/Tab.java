@@ -25,8 +25,10 @@ public class Tab implements Listener {
     private static Map<Plugin,Tab> instances = new HashMap<>();
     private static Level logLevel = Level.WARNING;
 
-    private final Plugin plugin;
-    private final Map<Player,TabList> tabLists;
+    private Plugin plugin;
+    private Map<Player,TabList> tabLists;
+
+    public Tab() {}
 
     public Tab(Plugin plugin) {
         this.plugin = plugin;

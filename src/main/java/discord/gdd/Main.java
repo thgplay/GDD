@@ -45,8 +45,8 @@ public class Main extends JavaPlugin {
 
         redis = new Redis("localhost", 6379, null);
         redis.start();
-        redis.setCache("gdd_teste", "ola pessoal <3");
-        redis.setCache("gdd_objeto", new Mod("teste", "irineu"));
+        redis.setCache("gdd_teste", "ola pessoal <3", 120);
+        redis.setCache("gdd_objeto", new Mod("teste", "irineu"), 120);
         getServer().getConsoleSender().sendMessage("Redis ligado e setando data cache!");
 
         runnable = new RunnableAPI().getInstance();
