@@ -21,7 +21,7 @@ Caso você tenha uma API/ideia para colocar na GDD-API, envie pelo grupo ou [Pul
 2. [Gabriel `Fundador`](https://www.youtube.com/channel/UCpybde151VdCFhdGQZ2bLBA)
 3. [Eduard `Fundador`](https://www.youtube.com/channel/UCaXE5yCDj1-QIg8ZODUVCqw)
 
-> Copyright © 2018 GDD API - Todos os direitos reservados Gabriel || Thg & Eduard
+> Copyright © 2018 GDD API - Alguns direitos reservados Gabriel || Thg & Eduard
 
 ## Exemplos & APIS
 
@@ -38,3 +38,6 @@ Caso você tenha uma API/ideia para colocar na GDD-API, envie pelo grupo ou [Pul
 1. Esse grupo foi criado por membros do grupo de discord, esse grupo nao tem nenhuma intencao de lucrar ou ganhar dinheiro em cima respectivamente sobre os donos ou qualquer coisa publicada aqui.
 2. Qualquer tipo de ajuda sempre e bem vinda, portanto que pelo menos api ou exemplo sejam cabiveis ao proposito.
 3. Não esqueça de se juntar ao grupo de discord se ainda não for membro, e seja bem vindo.
+
+## Licença
+Veja o arquivo [LICENSE](./LICENSE)
