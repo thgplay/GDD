@@ -12,12 +12,15 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 public class Vault {
 
     public Vault(){
-        if (!setupEconomy()){
-            // Hue, deu erro ao ativar o Vault?! Vamo desativar o plugin?
-            Bukkit.getPluginManager().disablePlugin(Main.getInstance());
-        }
     }
 
+    public void start(){
+        if (!setupEconomy()){
+            setupEconomy();
+            // Hue, deu erro ao ativar o Vault?! Vamo desativar o plugin?
+            //Bukkit.getPluginManager().disablePlugin(Main.getInstance());
+        }
+    }
     public Economy economy = null;
 
     private boolean setupEconomy() {
