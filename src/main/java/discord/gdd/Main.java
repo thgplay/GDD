@@ -2,7 +2,9 @@ package discord.gdd;
 
 import discord.gdd.config.json.JsonConfiguration;
 import discord.gdd.customentity.MobUtils;
+import discord.gdd.database.Redis;
 import discord.gdd.forge.ForgeAPI;
+import discord.gdd.forge.Mod;
 import discord.gdd.pentest.NetworkWatcher;
 import discord.gdd.tab.Tab;
 import discord.gdd.utils.Reflection;
@@ -28,8 +30,11 @@ public class Main extends JavaPlugin {
     @Getter static Vault vault;
     @Getter static ForgeAPI forge;
     @Getter static Tab tab;
-    @Getter static JsonConfiguration config;
-    @Getter static JsonConfiguration configMensagens;
+    @Getter static JsonConfiguration configs;
+    @Getter static JsonConfiguration configsMensagens;
+
+    /* BETA */
+    @Getter static Redis redis;
 
     public void onEnable() {
         setup();
@@ -37,15 +42,23 @@ public class Main extends JavaPlugin {
 
     public void setup() {
         instance = this;
+
+        redis = new Redis("localhost", 6379, null);
+        redis.start();
+        redis.setCache("gdd_teste", "ola pessoal <3");
+        redis.setCache("gdd_objeto", new Mod("teste", "irineu"));
+        getServer().getConsoleSender().sendMessage("Redis ligado e setando data cache!");
+
         runnable = new RunnableAPI().getInstance();
         watcher = new NetworkWatcher();
         mobUtils = new MobUtils();
         vault = new Vault();
+        vault.start();
         mobUtils.registrarTodos();
         forge = new ForgeAPI();
-        config = new JsonConfiguration(this);
+        configs = new JsonConfiguration(this);
         // colocar o .json no nome da config é opcional, se omitido a API ira colocar
-        configMensagens = new JsonConfiguration(this, "mensagens.json");
+        configsMensagens = new JsonConfiguration(this, "mensagens.json");
 
         Set<Class<?>> packages = Reflection.getPackages(getFile(),
                 getDescription().getMain()

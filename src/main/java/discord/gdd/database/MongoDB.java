@@ -14,12 +14,12 @@ public class MongoDB {
 Exemplo de implementacao com o mongodb
 */
 
-    protected static String _URL;
-    protected static String _USER;
-    protected static String _PASS;
-    protected static String _DATABASE;
-    private static MongoClient _CLIENT;
-    private static boolean _ENABLE;
+    protected String _URL;
+    protected String _USER;
+    protected String _PASS;
+    protected String _DATABASE;
+    private MongoClient _CLIENT;
+    private boolean _ENABLE;
 
     public MongoDB(String url, String user, String pass, String db){
         this._URL = url;
@@ -28,7 +28,7 @@ Exemplo de implementacao com o mongodb
         this._DATABASE = db;
     }
 
-    public static void start() {
+    public void start() {
         try {
             //MANDA A PORRA DO MONGO DB CALAR A BOCA
             Logger mongoLogger = Logger.getLogger( "org.mongodb.driver" );
@@ -42,13 +42,14 @@ Exemplo de implementacao com o mongodb
         }
     }
 
-    public static void stop() {
+    public void stop() {
         if (_ENABLE) {
             _CLIENT.close();
+            _ENABLE = false;
         }
     }
 
-    public static MongoDatabase getDataBase(String database) {
+    public MongoDatabase getDataBase(String database) {
         return _CLIENT.getDatabase(database);
     }
 
