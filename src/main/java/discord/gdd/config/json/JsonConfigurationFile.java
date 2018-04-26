@@ -7,12 +7,15 @@ import com.google.gson.stream.JsonReader;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.logging.Level;
 
 class JsonConfigurationFile {
-    private final File configFile;
-    private final JavaPlugin plugin;
-    final Gson gson;
+    private File configFile;
+    private JavaPlugin plugin;
+    Gson gson;
     JsonObject config;
 
     JsonConfigurationFile(JavaPlugin plugin, String name) {
@@ -22,6 +25,16 @@ class JsonConfigurationFile {
         if (!name.toLowerCase().endsWith(".json")) name += ".json";
 
         configFile = new File(plugin.getDataFolder(), name);
+
+        Path path = Paths.get(""+plugin.getDataFolder());
+        if (!Files.exists(path)) {
+            try {
+                Files.createDirectories(path);
+            } catch (IOException e) {
+                log(Level.WARNING, "Nao foi possivel criar a pasta do plugin.");
+            }
+        }
+
 
         try {
             loadFile();
