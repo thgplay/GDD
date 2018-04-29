@@ -1,0 +1,100 @@
+package discord.gdd.utils;
+
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+import org.bukkit.event.inventory.InventoryType;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+
+public class InventoryAPI {
+
+	private Inventory inv;
+	
+	/*
+	 * Simple API to create new Inventorys easily.
+	 * 
+	 * @author gameszaum
+	 * 
+	 */
+
+	public InventoryAPI(String name, int size) {
+		inv = Bukkit.createInventory(null, size, name);
+	}
+
+	public InventoryAPI(String name, InventoryType type) {
+		inv = Bukkit.createInventory(null, type, name);
+	}
+
+	public InventoryAPI(Player holder, String name, int size) {
+		inv = Bukkit.createInventory(holder, size, name);
+	}
+
+	public InventoryAPI(Player holder, String name, InventoryType type) {
+		inv = Bukkit.createInventory(holder, type, name);
+	}
+
+	public Inventory getInventory() {
+		return inv;
+	}
+
+	@SuppressWarnings("deprecation")
+	public int first(int i) {
+		return getInventory().first(i);
+	}
+
+	public int first(ItemStack i) {
+		return getInventory().first(i);
+	}
+
+	public int firstEmpty() {
+		return getInventory().firstEmpty();
+	}
+
+	@SuppressWarnings("deprecation")
+	public void remove(int i) {
+		getInventory().remove(i);
+	}
+
+	public void remove(ItemStack i) {
+		getInventory().remove(i);
+	}
+
+	public void clear() {
+		getInventory().clear();
+	}
+
+	public void clear(int i) {
+		getInventory().clear(i);
+	}
+
+	@SuppressWarnings("deprecation")
+	public boolean contains(int i) {
+		return getInventory().contains(i);
+	}
+
+	@SuppressWarnings("deprecation")
+	public boolean contains(int i, int j) {
+		return getInventory().contains(i, j);
+	}
+
+	public boolean contains(ItemStack i) {
+		return getInventory().contains(i);
+	}
+	
+	public boolean contains(ItemStack i, int j) {
+		return getInventory().contains(i,j);
+	}
+
+	public void setItem(int slot, ItemStack item) {
+		getInventory().setItem(slot, item);
+	}
+
+	public void addItem(ItemStack item) {
+		getInventory().addItem(item);
+	}
+
+	public void open(Player player) {
+		player.openInventory(getInventory());
+	}
+
+}
