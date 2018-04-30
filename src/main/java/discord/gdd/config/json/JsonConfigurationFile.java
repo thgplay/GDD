@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.google.gson.stream.JsonReader;
+import discord.gdd.config.json.serializers.LocationSerializer;
+import org.bukkit.Location;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.*;
@@ -17,7 +19,10 @@ class JsonConfigurationFile {
 
     JsonConfigurationFile(JavaPlugin plugin, String name) {
         this.plugin = plugin;
-        gson = new GsonBuilder().setPrettyPrinting().create();
+        gson = new GsonBuilder()
+                .setPrettyPrinting()
+                .registerTypeAdapter(Location.class, new LocationSerializer())
+                .create();
 
         if (!name.toLowerCase().endsWith(".json")) name += ".json";
 
