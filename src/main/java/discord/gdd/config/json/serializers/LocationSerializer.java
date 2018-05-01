@@ -1,7 +1,7 @@
 package discord.gdd.config.json.serializers;
 
 import com.google.gson.*;
-import discord.gdd.utils.exceptions.InvalidWorldException;
+import discord.gdd.config.json.exceptions.InvalidWorldException;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;

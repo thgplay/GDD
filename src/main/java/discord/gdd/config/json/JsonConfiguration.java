@@ -3,6 +3,7 @@ package discord.gdd.config.json;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import org.bukkit.Location;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.lang.reflect.Type;
@@ -60,6 +61,14 @@ public class JsonConfiguration extends JsonConfigurationFile {
 
     public Location getLocation(String path) {
         return getLocation(path, null);
+    }
+
+    public ItemStack getItemStack(String path) {
+        return getItemStack(path, null);
+    }
+
+    public ItemStack getItemStack(String path, ItemStack defaultValue) {
+        return get(path, defaultValue);
     }
 
     public Location getLocation(String path, Location defaultValue) {

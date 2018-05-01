@@ -1,4 +1,4 @@
-package discord.gdd.utils.exceptions;
+package discord.gdd.config.json.exceptions;
 
 import com.google.gson.JsonParseException;
 

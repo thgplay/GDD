@@ -20,7 +20,16 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-public class ItemSerializer implements JsonSerializer<ItemStack>, JsonDeserializer<ItemStack> {
+/**
+ * Parse {@link ItemStack} to JSON
+ *
+ * @author DevSrSouza
+ * @version 1.0
+ *
+ * https://github.com/DevSrSouza/
+ * You can find updates here https://gist.github.com/DevSrSouza
+ */
+public class ItemStackSerializer implements JsonSerializer<ItemStack>, JsonDeserializer<ItemStack> {
     private static final String[] BYPASS_CLASS = {"CraftMetaBlockState", "CraftMetaItem"
             /*Glowstone Support*/, "GlowMetaItem"};
 
