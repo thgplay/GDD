@@ -2,7 +2,8 @@ package discord.gdd.config.json;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.lang.reflect.Type;
@@ -58,6 +59,22 @@ public class JsonConfiguration extends JsonConfigurationFile {
         return get(path, defaultValue);
     }
 
+    public Location getLocation(String path) {
+        return getLocation(path, null);
+    }
+
+    public ItemStack getItemStack(String path) {
+        return getItemStack(path, null);
+    }
+
+    public ItemStack getItemStack(String path, ItemStack defaultValue) {
+        return get(path, defaultValue);
+    }
+
+    public Location getLocation(String path, Location defaultValue) {
+        return get(path, defaultValue);
+    }
+
     private <T> T get(String path, T defaultValue) {
         try {
             T valor = gson.fromJson(get(path), (Type) defaultValue.getClass());
@@ -67,7 +84,7 @@ public class JsonConfiguration extends JsonConfigurationFile {
         }
     }
 
-    public void addDefault(String path, Object value){
+    public void addDefault(String path, Object value) {
         if (!contains(path)) set(path, value);
     }
 
@@ -75,7 +92,6 @@ public class JsonConfiguration extends JsonConfigurationFile {
         try {
             if (path.contains(".")) {
                 String[] subPaths = path.split("\\.");
-                Bukkit.broadcastMessage("subPaths: " + subPaths.length);
                 JsonObject[] jObjts = new JsonObject[subPaths.length - 1];
 
                 for (int i = 0; i < subPaths.length; i++) {
