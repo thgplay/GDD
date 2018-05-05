@@ -10,6 +10,24 @@ import java.lang.reflect.Constructor;
 Criado pelo Reityy#1427 - Membro da GDD
 */
 
+/*
+   EXEMPLO
+   
+   @EventHandler
+   public void onJoin(PlayerJoinEvent event){
+ 	Player player p = event.getPlayer
+	ActionBar.sendAction(player, ChatColor.GREEN + "Aguarde 3 segundos...");
+        new BukkitRunnable(){
+	   @Override
+	   public void run(){
+	       ActionBar.sendAction(player, ChatColor.REd + "Se passou 3 segundos");
+	       cancel();
+	   }
+	}.runTaskTimer(Main.getPlugin(Main.class), 60L, 60L);
+   }
+
+*/
+
 public class ActionBar {
 	
     public static void sendAction(Player p, String message){
