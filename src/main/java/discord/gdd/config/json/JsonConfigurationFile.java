@@ -13,6 +13,9 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.logging.Level;
 
 class JsonConfigurationFile {
@@ -34,6 +37,16 @@ class JsonConfigurationFile {
         if (!name.toLowerCase().endsWith(".json")) name += ".json";
 
         configFile = new File(plugin.getDataFolder(), name);
+
+        Path path = Paths.get(""+plugin.getDataFolder());
+        if (!Files.exists(path)) {
+            try {
+                Files.createDirectories(path);
+            } catch (IOException e) {
+                log(Level.WARNING, "Nao foi possivel criar a pasta do plugin.");
+            }
+        }
+
 
         try {
             loadFile();
