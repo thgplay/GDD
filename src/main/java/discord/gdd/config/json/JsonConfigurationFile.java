@@ -4,7 +4,9 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.google.gson.stream.JsonReader;
+import discord.gdd.config.json.serializers.ItemStackDeserializer;
 import discord.gdd.config.json.serializers.ItemStackSerializer;
+import discord.gdd.config.json.serializers.LocationDeserializer;
 import discord.gdd.config.json.serializers.LocationSerializer;
 import org.bukkit.Location;
 import org.bukkit.inventory.ItemStack;
@@ -14,9 +16,9 @@ import java.io.*;
 import java.util.logging.Level;
 
 class JsonConfigurationFile {
+    final Gson gson;
     private final File configFile;
     private final JavaPlugin plugin;
-    final Gson gson;
     JsonObject config;
 
     JsonConfigurationFile(JavaPlugin plugin, String name) {
@@ -24,7 +26,9 @@ class JsonConfigurationFile {
         gson = new GsonBuilder()
                 .setPrettyPrinting()
                 .registerTypeAdapter(Location.class, new LocationSerializer())
+                .registerTypeAdapter(Location.class, new LocationDeserializer())
                 .registerTypeAdapter(ItemStack.class, new ItemStackSerializer())
+                .registerTypeAdapter(ItemStack.class, new ItemStackDeserializer())
                 .create();
 
         if (!name.toLowerCase().endsWith(".json")) name += ".json";
@@ -39,7 +43,7 @@ class JsonConfigurationFile {
         }
     }
 
-    public void reload(){
+    public void reload() {
         try {
             loadFile();
             loadConfig();
@@ -48,7 +52,7 @@ class JsonConfigurationFile {
         }
     }
 
-    public void save(){
+    public void save() {
         try (Writer writer = new FileWriter(configFile)) {
             gson.toJson(config, writer);
         } catch (IOException e) {
@@ -78,7 +82,7 @@ class JsonConfigurationFile {
         config = gson.fromJson(new JsonReader(new FileReader(configFile)), JsonObject.class);
         if (config == null)
             config = new Gson().fromJson("{}", JsonObject.class);
-        log("Loaded "  + (config != null));
+        log("Loaded " + (config != null));
     }
 
     private void log(String msg) {
