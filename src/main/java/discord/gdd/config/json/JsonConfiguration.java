@@ -24,7 +24,7 @@ public class JsonConfiguration extends JsonConfigurationFile {
     }
 
     public Integer getInteger(String path, Integer defaultValue) {
-        return get(path, defaultValue);
+        return get(path, defaultValue, Integer.class);
     }
 
     public Double getDouble(String path) {
@@ -32,7 +32,7 @@ public class JsonConfiguration extends JsonConfigurationFile {
     }
 
     public Double getDouble(String path, Double defaultValue) {
-        return get(path, defaultValue);
+        return get(path, defaultValue, Double.class);
     }
 
     public String getString(String path) {
@@ -40,7 +40,7 @@ public class JsonConfiguration extends JsonConfigurationFile {
     }
 
     public String getString(String path, String defaultValue) {
-        return get(path, defaultValue);
+        return get(path, defaultValue, String.class);
     }
 
     public Long getLong(String path) {
@@ -48,7 +48,7 @@ public class JsonConfiguration extends JsonConfigurationFile {
     }
 
     public Long getLong(String path, Long defaultValue) {
-        return get(path, defaultValue);
+        return get(path, defaultValue, Long.class);
     }
 
     public List<String> getStringList(String path) {
@@ -56,11 +56,15 @@ public class JsonConfiguration extends JsonConfigurationFile {
     }
 
     public List<String> getStringList(String path, List<String> defaultValue) {
-        return get(path, defaultValue);
+        return get(path, defaultValue, List.class);
     }
 
     public Location getLocation(String path) {
         return getLocation(path, null);
+    }
+
+    public Location getLocation(String path, Location defaultValue) {
+        return get(path, defaultValue, Location.class);
     }
 
     public ItemStack getItemStack(String path) {
@@ -68,16 +72,12 @@ public class JsonConfiguration extends JsonConfigurationFile {
     }
 
     public ItemStack getItemStack(String path, ItemStack defaultValue) {
-        return get(path, defaultValue);
+        return get(path, defaultValue, ItemStack.class);
     }
 
-    public Location getLocation(String path, Location defaultValue) {
-        return get(path, defaultValue);
-    }
-
-    private <T> T get(String path, T defaultValue) {
+    private <T> T get(String path, T defaultValue, Type type) {
         try {
-            T valor = gson.fromJson(get(path), (Type) defaultValue.getClass());
+            T valor = gson.fromJson(get(path), type);
             return valor == null ? defaultValue : valor;
         } catch (Exception e) {
             return defaultValue;
