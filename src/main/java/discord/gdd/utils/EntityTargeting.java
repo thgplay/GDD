@@ -2,7 +2,6 @@ package discord.gdd.utils;
 
 import java.util.Collection;
 import java.util.EnumSet;
-import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -283,33 +282,26 @@ public final class EntityTargeting {
 		Preconditions.checkArgument(searchRadius >= 0);
 		Preconditions.checkArgument(targetOffset >= 0);
 
-		double halfRadius = searchRadius / 2;
-		List<Entity> targets = observer.getNearbyEntities(halfRadius, halfRadius, halfRadius);
-
 		Location playerLoc = observer.getEyeLocation();
 
 		Vector linePoint = playerLoc.toVector();
 		Vector lineDirection = playerLoc.getDirection();
 
-		for (Entity target : targets) {
-			if (!targetTypes.contains(target.getType())) {
-				continue;
-			}
+		double halfRadius = searchRadius / 2;
+		return observer.getNearbyEntities(halfRadius, halfRadius, halfRadius).stream()
+				.filter(target -> targetTypes.contains(target.getType()))
+				.filter(target -> intersects(linePoint, lineDirection, target, targetOffset)).findAny().orElse(null);
+	}
 
-			Vector planePoint = target.getLocation().toVector();
-			Vector planeNormal = linePoint.clone().subtract(planePoint);
-
-			double t = (planePoint.dot(planeNormal) - planeNormal.dot(linePoint)) / planeNormal.dot(lineDirection);
-			if (t < 0) {
-				continue;
-			}
-
-			Vector intersection = lineDirection.clone().multiply(t).add(linePoint);
-			if (intersection.distanceSquared(planePoint) < Math.pow(targetOffset, 2)) {
-				return target;
-			}
+	private static boolean intersects(Vector linePoint, Vector lineDirection, Entity target, double targetOffset) {
+		Vector planePoint = target.getLocation().toVector();
+		Vector planeNormal = linePoint.clone().subtract(planePoint);
+		double t = (planePoint.dot(planeNormal) - planeNormal.dot(linePoint)) / planeNormal.dot(lineDirection);
+		if (t < 0) {
+			return false;
 		}
 
-		return null;
+		Vector intersection = lineDirection.clone().multiply(t).add(linePoint);
+		return intersection.distanceSquared(planePoint) < Math.pow(targetOffset, 2);
 	}
 }
